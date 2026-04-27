@@ -1,18 +1,14 @@
-# Eligify 🚀
+# Eligify 
 
 **Find what you’re eligible for.**
 
----
-
-## 🧠 What is Eligify?
+What is Eligify?
 
 Eligify is a web platform that helps people quickly figure out **which government schemes they can actually apply for**, without going through confusing websites or long documents.
 
 Right now, most users either don’t know about schemes or don’t understand whether they qualify. Eligify solves that by turning a complicated process into something simple and guided.
 
----
-
-## ❗ Problem
+Problem
 
 Government schemes like Pradhan Mantri Awas Yojana, scholarships, and subsidies are meant to help people — but in reality:
 
@@ -22,10 +18,7 @@ Government schemes like Pradhan Mantri Awas Yojana, scholarships, and subsidies 
 * Many people miss out on benefits they deserve
 
 This creates a gap between **available support** and **actual usage**.
-
----
-
-## 💡 Our Solution
+Our Solution
 
 Eligify simplifies the entire process.
 
@@ -36,9 +29,7 @@ Instead of searching manually, users:
 
 → And instantly get a list of schemes they are eligible for.
 
----
-
-## ⚙️ How It Works
+How It Works
 
 ### 1. Smart Eligibility Flow
 
@@ -82,9 +73,7 @@ We use AI where it actually helps:
 * Summarize long government descriptions
 * Make information easier to understand
 
----
-
-## 🏗️ Tech Stack
+Tech Stack
 
 We chose tools that are fast to build with and scalable:
 
@@ -110,9 +99,7 @@ We chose tools that are fast to build with and scalable:
 
 * OpenAI API
 
----
-
-## 🧩 Project Scope (Current Build)
+Project Scope (Current Build)
 
 For this project, we are focusing on:
 
@@ -122,9 +109,7 @@ For this project, we are focusing on:
 * Basic AI query + summarization
 * Clean and responsive UI
 
----
-
-## 🔮 Future Scope
+Future Scope
 
 * Voice input (Hindi/English)
 * Regional language support
@@ -132,9 +117,7 @@ For this project, we are focusing on:
 * WhatsApp chatbot integration
 * Real-time government API integration
 
----
-
-## 🎯 Impact
+Impact
 
 Eligify aims to:
 
@@ -143,18 +126,13 @@ Eligify aims to:
 * Reduce confusion and time spent searching
 * Make digital services more accessible
 
----
-
-## 🏁 Conclusion
+Conclusion
 
 Eligify is not trying to replace official government portals.
 It acts as a **guidance layer** that helps users understand their eligibility and take the next step with confidence.
 
----
-
-## 👥 Team
+Team
 
 Built as a collaborative capstone project using a single GitHub repository.
 
----
 
