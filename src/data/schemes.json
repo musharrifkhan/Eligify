@@ -1,0 +1,846 @@
+[
+  {
+    "id": "pmay-urban-001",
+    "name": "Pradhan Mantri Awas Yojana (Urban)",
+    "shortName": "PMAY-U",
+    "category": "housing",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Provides financial assistance to urban poor for construction or purchase of pucca houses. Beneficiaries get interest subsidy on home loans.",
+    "eligibility": {
+      "income_max": 1800000,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_not_own_pucca_house": true,
+      "residence_type": ["urban"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Interest subsidy up to 6.5% on home loans",
+      "Subsidy amount up to ₹2.67 lakh",
+      "Applicable for loans up to ₹6 lakh (EWS/LIG category)"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Bank Account Details",
+      "Affidavit of not owning a pucca house",
+      "Caste Certificate (if applicable)"
+    ],
+    "applicationProcess": [
+      "Visit the official PMAY website or nearest Common Service Centre (CSC)",
+      "Fill in the application form with personal and income details",
+      "Upload required documents",
+      "Submit and note the application reference number",
+      "Track status on pmaymis.gov.in"
+    ],
+    "apply_url": "https://pmaymis.gov.in",
+    "tags": ["housing", "subsidy", "urban", "home loan", "EWS", "LIG"]
+  },
+  {
+    "id": "nsp-scholarship-002",
+    "name": "National Scholarship Portal – Pre-Matric Scholarship (SC Students)",
+    "shortName": "NSP Pre-Matric SC",
+    "category": "education",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Financial assistance to SC students studying in Class 9 and 10 to help them continue their education without financial burden.",
+    "eligibility": {
+      "income_max": 250000,
+      "income_min": 0,
+      "occupation": ["student"],
+      "age_min": 14,
+      "age_max": 20,
+      "gender": ["any"],
+      "caste": ["SC"],
+      "study_level": ["class_9", "class_10"],
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹150/month for day scholars",
+      "₹350/month for hostellers",
+      "Annual maintenance allowance"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate (SC)",
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bank Account (preferably in student's name)",
+      "School Bonafide Certificate"
+    ],
+    "applicationProcess": [
+      "Register on scholarships.gov.in",
+      "Select the pre-matric SC scholarship scheme",
+      "Fill personal, academic, and bank details",
+      "Upload documents",
+      "Submit before the deadline (usually October–November)"
+    ],
+    "apply_url": "https://scholarships.gov.in",
+    "tags": ["scholarship", "education", "SC", "pre-matric", "class 9", "class 10"]
+  },
+  {
+    "id": "nsp-postmatric-obc-003",
+    "name": "Post-Matric Scholarship for OBC Students",
+    "shortName": "NSP Post-Matric OBC",
+    "category": "education",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Scholarship for OBC students pursuing post-matric education (Class 11 onwards) to reduce dropout rates and promote higher education.",
+    "eligibility": {
+      "income_max": 100000,
+      "income_min": 0,
+      "occupation": ["student"],
+      "age_min": 15,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["OBC"],
+      "study_level": ["class_11", "class_12", "graduation", "post_graduation", "diploma"],
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Maintenance allowance per month (varies by course level)",
+      "Reimbursement of compulsory non-refundable fees",
+      "Additional allowances for students with disabilities"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "OBC Certificate",
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Admission Letter / Fee Receipt",
+      "Bank Account Details"
+    ],
+    "applicationProcess": [
+      "Visit scholarships.gov.in and register",
+      "Select Post-Matric Scholarship for OBC",
+      "Fill in course, institution, and income details",
+      "Upload supporting documents",
+      "Submit and track application"
+    ],
+    "apply_url": "https://scholarships.gov.in",
+    "tags": ["scholarship", "education", "OBC", "post-matric", "graduation", "college"]
+  },
+  {
+    "id": "pmjdy-004",
+    "name": "Pradhan Mantri Jan Dhan Yojana",
+    "shortName": "PMJDY",
+    "category": "financial",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "National financial inclusion mission to ensure access to financial services like banking, savings, credit, insurance, and pension for all Indians.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 10,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_not_have_bank_account": true,
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Zero balance savings account",
+      "RuPay debit card with ₹2 lakh accident insurance",
+      "Overdraft facility up to ₹10,000 after 6 months",
+      "Life insurance cover of ₹30,000",
+      "Direct benefit transfer (DBT) eligible"
+    ],
+    "documents": [
+      "Aadhaar Card (or any government ID)",
+      "Passport-size photograph"
+    ],
+    "applicationProcess": [
+      "Visit any bank branch or Business Correspondent (BC) outlet",
+      "Fill the PMJDY account opening form",
+      "Submit Aadhaar or alternate KYC document",
+      "Account is opened instantly"
+    ],
+    "apply_url": "https://pmjdy.gov.in",
+    "tags": ["banking", "financial inclusion", "savings account", "insurance", "zero balance"]
+  },
+  {
+    "id": "pmksy-agriculture-005",
+    "name": "Pradhan Mantri Kisan Samman Nidhi",
+    "shortName": "PM-KISAN",
+    "category": "agriculture",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Income support scheme providing ₹6,000 per year to all farmer families to supplement their financial needs.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["farmer"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_own_farmland": true,
+      "residence_type": ["rural"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹6,000 per year in 3 equal instalments of ₹2,000",
+      "Directly transferred to bank account via DBT"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Records (Khasra/Khatauni)",
+      "Bank Account linked to Aadhaar",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit pmkisan.gov.in or nearest CSC",
+      "Register as a new farmer with land and bank details",
+      "Aadhaar verification is mandatory",
+      "Instalment status can be checked on the portal"
+    ],
+    "apply_url": "https://pmkisan.gov.in",
+    "tags": ["farmer", "agriculture", "income support", "rural", "DBT"]
+  },
+  {
+    "id": "ayushman-bharat-006",
+    "name": "Ayushman Bharat – Pradhan Mantri Jan Arogya Yojana",
+    "shortName": "AB-PMJAY",
+    "category": "health",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "World's largest government-funded health insurance scheme providing coverage of ₹5 lakh per family per year for secondary and tertiary hospitalisation.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 0,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "secc_listed": true,
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Health cover up to ₹5 lakh per family per year",
+      "Covers pre and post hospitalisation expenses",
+      "Cashless treatment at empanelled hospitals",
+      "No cap on family size or age"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card (if applicable)",
+      "SECC data verification at hospital"
+    ],
+    "applicationProcess": [
+      "Check eligibility at pmjay.gov.in using mobile number or Ration Card",
+      "Visit any empanelled hospital for cashless treatment",
+      "Show Aadhaar at the hospital's Ayushman helpdesk",
+      "No premium payment required"
+    ],
+    "apply_url": "https://pmjay.gov.in",
+    "tags": ["health", "insurance", "hospital", "cashless", "BPL", "SECC"]
+  },
+  {
+    "id": "haryana-merit-scholarship-007",
+    "name": "Haryana State Merit Scholarship",
+    "shortName": "Haryana Merit",
+    "category": "education",
+    "governmentLevel": "state",
+    "state": ["haryana"],
+    "description": "Scholarship by Haryana government for meritorious students from economically weaker sections studying in Class 1 to post-graduation.",
+    "eligibility": {
+      "income_max": 200000,
+      "income_min": 0,
+      "occupation": ["student"],
+      "age_min": 6,
+      "age_max": 30,
+      "gender": ["any"],
+      "caste": ["any"],
+      "domicile_state": "haryana",
+      "min_marks_percent": 60,
+      "study_level": ["class_1_to_8", "class_9", "class_10", "class_11", "class_12", "graduation", "post_graduation"],
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹200 to ₹1,000 per month depending on class level",
+      "Additional merit awards for top performers"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Haryana Domicile Certificate",
+      "Income Certificate",
+      "Previous Year Marksheet (minimum 60%)",
+      "School/College Bonafide Certificate",
+      "Bank Account Details"
+    ],
+    "applicationProcess": [
+      "Visit haryanascbc.gov.in or scholarships.gov.in",
+      "Register and select the relevant state scholarship",
+      "Fill in academic and income details",
+      "Upload documents and submit before deadline"
+    ],
+    "apply_url": "https://haryanascbc.gov.in",
+    "tags": ["scholarship", "haryana", "state", "merit", "education", "EWS"]
+  },
+  {
+    "id": "mudra-loan-008",
+    "name": "Pradhan Mantri MUDRA Yojana",
+    "shortName": "PMMY / MUDRA",
+    "category": "entrepreneurship",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Provides loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises for income-generating activities.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["self_employed", "small_business_owner", "entrepreneur"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Shishu: Loans up to ₹50,000",
+      "Kishore: Loans from ₹50,001 to ₹5 lakh",
+      "Tarun: Loans from ₹5 lakh to ₹10 lakh",
+      "No collateral required for Shishu category",
+      "MUDRA RuPay card for working capital"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Plan / Activity Proof",
+      "Bank Statement (last 6 months)",
+      "Passport-size Photographs",
+      "Quotation for machinery (if applicable)"
+    ],
+    "applicationProcess": [
+      "Approach any bank, MFI, or NBFC offering MUDRA loans",
+      "Fill MUDRA loan application form",
+      "Submit business details and required documents",
+      "Loan is sanctioned based on creditworthiness and business plan",
+      "Track on mudra.org.in"
+    ],
+    "apply_url": "https://www.mudra.org.in",
+    "tags": ["loan", "business", "entrepreneur", "self-employed", "startup", "MSME"]
+  },
+  {
+    "id": "beti-bachao-009",
+    "name": "Beti Bachao Beti Padhao – Sukanya Samriddhi Yojana",
+    "shortName": "SSY / BBBP",
+    "category": "women_child",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Small deposit savings scheme for the girl child providing tax-free returns and financial security for education and marriage expenses.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 0,
+      "age_max": 10,
+      "gender": ["female"],
+      "caste": ["any"],
+      "residence_type": ["any"],
+      "marital_status": ["any"],
+      "special_note": "Account must be opened before the girl turns 10. Parent/guardian opens the account."
+    },
+    "benefits": [
+      "High interest rate (currently ~8.2% p.a., revised quarterly)",
+      "Tax exemption under Section 80C",
+      "Partial withdrawal allowed at age 18 for education",
+      "Account matures when girl turns 21"
+    ],
+    "documents": [
+      "Girl Child's Birth Certificate",
+      "Parent/Guardian Aadhaar Card",
+      "Parent/Guardian PAN Card",
+      "Passport-size Photographs",
+      "Address Proof"
+    ],
+    "applicationProcess": [
+      "Visit any Post Office or authorised bank branch",
+      "Fill the SSY account opening form",
+      "Minimum deposit of ₹250 to open the account",
+      "Maximum deposit of ₹1.5 lakh per year",
+      "Passbook issued for tracking"
+    ],
+    "apply_url": "https://www.indiapost.gov.in",
+    "tags": ["girl child", "savings", "education", "women", "tax benefit", "investment"]
+  },
+  {
+    "id": "epfo-atal-pension-010",
+    "name": "Atal Pension Yojana",
+    "shortName": "APY",
+    "category": "pension",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Pension scheme focused on unorganised sector workers guaranteeing a minimum monthly pension of ₹1,000 to ₹5,000 after age 60.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": 40,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_have_bank_account": true,
+      "must_not_be_income_taxpayer": true,
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Guaranteed pension of ₹1,000 / ₹2,000 / ₹3,000 / ₹4,000 / ₹5,000 per month at age 60",
+      "Government co-contribution of 50% for eligible subscribers (early joiners)",
+      "Spouse continues pension after subscriber's death",
+      "Nominee receives corpus on death of both"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account linked to Aadhaar",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit your bank branch or use net banking",
+      "Fill APY registration form",
+      "Choose desired pension amount (₹1K–₹5K)",
+      "Auto-debit set up for monthly contributions",
+      "Track on npscra.nsdl.co.in"
+    ],
+    "apply_url": "https://npscra.nsdl.co.in",
+    "tags": ["pension", "retirement", "unorganised sector", "social security", "old age"]
+  },
+  {
+    "id": "pmsby-insurance-011",
+    "name": "Pradhan Mantri Suraksha Bima Yojana",
+    "shortName": "PMSBY",
+    "category": "insurance",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Accidental death and disability insurance scheme offering coverage of ₹2 lakh at a premium of just ₹20 per year for bank account holders.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": 70,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_have_bank_account": true,
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹2 lakh on accidental death or permanent total disability",
+      "₹1 lakh on permanent partial disability",
+      "Annual premium of only ₹20 (auto-debited from bank account)"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account linked to Aadhaar",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit your bank branch, net banking portal, or Jan Dhan account",
+      "Fill PMSBY enrollment form or enroll via SMS/mobile banking",
+      "Auto-debit of ₹20 is set up from your account",
+      "Policy renews automatically every year on 1st June"
+    ],
+    "apply_url": "https://jansuraksha.gov.in",
+    "tags": ["insurance", "accident", "disability", "low premium", "banking", "financial security"]
+  },
+  {
+    "id": "pmjjby-insurance-012",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+    "shortName": "PMJJBY",
+    "category": "insurance",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Life insurance scheme offering ₹2 lakh death cover for any reason at an annual premium of ₹436 for bank account holders.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": 50,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_have_bank_account": true,
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹2 lakh life insurance cover for death due to any reason",
+      "Annual premium of ₹436 (auto-debited from bank account)",
+      "No medical examination required"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account linked to Aadhaar",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit your bank branch or enroll via net banking / mobile banking",
+      "Fill PMJJBY enrollment-cum-auto-debit form",
+      "Annual premium of ₹436 is auto-debited on 1st June each year",
+      "Nominee receives ₹2 lakh on policyholder's death"
+    ],
+    "apply_url": "https://jansuraksha.gov.in",
+    "tags": ["life insurance", "death cover", "low premium", "banking", "family security"]
+  },
+  {
+    "id": "nrega-employment-013",
+    "name": "Mahatma Gandhi National Rural Employment Guarantee Act",
+    "shortName": "MGNREGA / NREGA",
+    "category": "employment",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Guarantees 100 days of wage employment per financial year to every rural household whose adult members volunteer to do unskilled manual work.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "residence_type": ["rural"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "100 days of guaranteed wage employment per year",
+      "Minimum wages as per state schedule (₹200–₹350/day)",
+      "Unemployment allowance if work not provided within 15 days",
+      "Work provided within 5 km of residence"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card or Residence Proof",
+      "Bank Account or Post Office Account",
+      "Passport-size Photograph"
+    ],
+    "applicationProcess": [
+      "Register at your local Gram Panchayat office",
+      "Apply for a Job Card (free of cost)",
+      "Submit work application to Gram Panchayat when needed",
+      "Work must be assigned within 15 days of application",
+      "Wages paid directly to bank/post office account within 15 days of work"
+    ],
+    "apply_url": "https://nrega.nic.in",
+    "tags": ["employment", "rural", "wages", "job card", "unskilled labour", "panchayat"]
+  },
+  {
+    "id": "standup-india-014",
+    "name": "Stand-Up India Scheme",
+    "shortName": "Stand-Up India",
+    "category": "entrepreneurship",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore to at least one SC/ST borrower and one woman borrower per bank branch for setting up greenfield enterprises.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["entrepreneur", "self_employed", "small_business_owner"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["SC", "ST", "any"],
+      "gender_or_caste_condition": "Must be SC/ST OR female",
+      "residence_type": ["any"],
+      "marital_status": ["any"],
+      "special_note": "Eligible if SC/ST (any gender) OR female (any caste). Business must be a greenfield (new) enterprise."
+    },
+    "benefits": [
+      "Composite loan between ₹10 lakh and ₹1 crore",
+      "Covers 75% of project cost",
+      "Repayment period up to 7 years",
+      "Moratorium period up to 18 months"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Caste Certificate (for SC/ST applicants)",
+      "Business Plan / Project Report",
+      "Bank Statement (last 6 months)",
+      "Proof of no existing default with any bank"
+    ],
+    "applicationProcess": [
+      "Apply online at standupmitra.in or visit any Scheduled Commercial Bank branch",
+      "Register and fill in business and personal details",
+      "Submit project report and financial documents",
+      "Bank processes loan after due diligence",
+      "Loan disbursed to business account"
+    ],
+    "apply_url": "https://www.standupmitra.in",
+    "tags": ["loan", "SC", "ST", "women", "entrepreneur", "startup", "greenfield", "business"]
+  },
+  {
+    "id": "pmkvy-skill-015",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana",
+    "shortName": "PMKVY",
+    "category": "skill_development",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Flagship skill development scheme enabling Indian youth to take industry-relevant skill training and earn a government-recognised certificate.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["student", "unemployed", "any"],
+      "age_min": 15,
+      "age_max": 45,
+      "gender": ["any"],
+      "caste": ["any"],
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Free skill training across 300+ job roles",
+      "Government-recognised National Skills Qualification Framework (NSQF) certificate",
+      "Monetary reward of ₹8,000 on successful completion",
+      "Placement assistance after training"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificates",
+      "Passport-size Photographs",
+      "Bank Account Details"
+    ],
+    "applicationProcess": [
+      "Visit skillindia.gov.in or the PMKVY portal",
+      "Find a training centre near you",
+      "Register with personal and educational details",
+      "Complete the selected skill course (duration varies)",
+      "Appear for assessment and receive certificate"
+    ],
+    "apply_url": "https://www.pmkvyofficial.org",
+    "tags": ["skill", "training", "youth", "certificate", "employment", "vocational", "free training"]
+  },
+  {
+    "id": "pmay-gramin-016",
+    "name": "Pradhan Mantri Awas Yojana (Gramin)",
+    "shortName": "PMAY-G",
+    "category": "housing",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Provides financial assistance to rural BPL households to construct a pucca house with basic amenities.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "secc_listed": true,
+      "must_not_own_pucca_house": true,
+      "residence_type": ["rural"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹1.20 lakh assistance in plain areas",
+      "₹1.30 lakh assistance in hilly/difficult areas",
+      "Additional ₹12,000 for toilet construction under Swachh Bharat Mission",
+      "90 days of unskilled labour under MGNREGA"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "SECC-2011 listing proof",
+      "Bank Account linked to Aadhaar",
+      "BPL Certificate",
+      "Land Ownership Document"
+    ],
+    "applicationProcess": [
+      "Beneficiaries are selected based on SECC-2011 data by Gram Sabha",
+      "Verify name on awaassoft.nic.in",
+      "Register at Gram Panchayat or Block Development Office",
+      "Funds released in instalments upon construction progress",
+      "Geo-tagged photos submitted at each stage"
+    ],
+    "apply_url": "https://pmayg.nic.in",
+    "tags": ["housing", "rural", "BPL", "pucca house", "gramin", "SECC", "construction"]
+  },
+  {
+    "id": "dbt-lpg-ujjwala-017",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "shortName": "PMUY",
+    "category": "energy",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Provides free LPG connections to women from BPL households to replace unclean cooking fuels and improve health and environment.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["female"],
+      "caste": ["any"],
+      "must_be_bpl": true,
+      "must_not_have_lpg_connection": true,
+      "residence_type": ["rural", "urban"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "Free LPG connection with first refill and stove",
+      "EMI facility for stove and first refill cost",
+      "Subsidy on subsequent refills via DBT",
+      "Improved indoor air quality and women's health"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL Ration Card",
+      "Bank Account Details",
+      "Passport-size Photographs",
+      "Self-declaration of not having LPG connection"
+    ],
+    "applicationProcess": [
+      "Visit nearest LPG distributor (HP, Bharat, or Indane Gas)",
+      "Fill the KYC form for Ujjwala Yojana",
+      "Submit BPL card and Aadhaar",
+      "Connection released after verification",
+      "Subsidy credited directly to bank account"
+    ],
+    "apply_url": "https://www.pmujjwalayojana.com",
+    "tags": ["LPG", "cooking gas", "women", "BPL", "energy", "subsidy", "rural", "health"]
+  },
+  {
+    "id": "haryana-kanyadan-018",
+    "name": "Haryana Mukhyamantri Vivah Shagun Yojana",
+    "shortName": "Vivah Shagun Haryana",
+    "category": "women_child",
+    "governmentLevel": "state",
+    "state": ["haryana"],
+    "description": "Financial assistance provided by Haryana government to families at the time of marriage of their daughters, especially from SC/ST, BPL, and widow families.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 18,
+      "age_max": null,
+      "gender": ["female"],
+      "caste": ["SC", "ST", "BC", "any"],
+      "domicile_state": "haryana",
+      "residence_type": ["any"],
+      "marital_status": ["unmarried"],
+      "special_note": "Applicable at time of marriage. Bride must be 18+, groom must be 21+."
+    },
+    "benefits": [
+      "₹71,000 for SC/ST/BPL widow families",
+      "₹31,000 for SC/ST general families",
+      "₹21,000 for BPL and destitute women",
+      "₹11,000 for other eligible categories"
+    ],
+    "documents": [
+      "Aadhaar Card (bride and parents)",
+      "Haryana Domicile Certificate",
+      "Caste Certificate",
+      "BPL Card (if applicable)",
+      "Marriage Card / Invitation",
+      "Bank Account Details"
+    ],
+    "applicationProcess": [
+      "Apply online at saralharyana.gov.in before or within 6 months of marriage",
+      "Fill personal and marriage details",
+      "Upload required documents",
+      "Application verified by local authorities",
+      "Amount credited to bride's bank account"
+    ],
+    "apply_url": "https://saralharyana.gov.in",
+    "tags": ["marriage", "women", "haryana", "SC", "ST", "BPL", "shagun", "financial assistance"]
+  },
+  {
+    "id": "disability-scholarship-019",
+    "name": "Scholarship for Students with Disabilities (National)",
+    "shortName": "Disability Scholarship",
+    "category": "education",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Financial assistance to students with benchmark disabilities pursuing education from Class 9 to post-graduation level.",
+    "eligibility": {
+      "income_max": 250000,
+      "income_min": 0,
+      "occupation": ["student"],
+      "age_min": 14,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "has_disability": true,
+      "min_disability_percent": 40,
+      "study_level": ["class_9", "class_10", "class_11", "class_12", "graduation", "post_graduation", "diploma"],
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹500 to ₹2,000 per month maintenance allowance",
+      "Book allowance and transport allowance",
+      "Additional allowances for assistive devices"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Disability Certificate (minimum 40%) from government hospital",
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Admission Proof / Fee Receipt",
+      "Bank Account Details"
+    ],
+    "applicationProcess": [
+      "Register on scholarships.gov.in",
+      "Select the scholarship for students with disabilities",
+      "Enter disability certificate details and upload documents",
+      "Submit before the annual deadline",
+      "Renewal required every year with updated marksheet"
+    ],
+    "apply_url": "https://scholarships.gov.in",
+    "tags": ["disability", "scholarship", "education", "divyang", "student", "special needs"]
+  },
+  {
+    "id": "senior-citizen-pension-020",
+    "name": "Indira Gandhi National Old Age Pension Scheme",
+    "shortName": "IGNOAPS",
+    "category": "pension",
+    "governmentLevel": "central",
+    "state": ["all"],
+    "description": "Monthly pension for destitute senior citizens aged 60 and above from BPL households under the National Social Assistance Programme.",
+    "eligibility": {
+      "income_max": null,
+      "income_min": 0,
+      "occupation": ["any"],
+      "age_min": 60,
+      "age_max": null,
+      "gender": ["any"],
+      "caste": ["any"],
+      "must_be_bpl": true,
+      "residence_type": ["any"],
+      "marital_status": ["any"]
+    },
+    "benefits": [
+      "₹200/month for ages 60–79 (central contribution)",
+      "₹500/month for ages 80 and above",
+      "States may add additional top-up (e.g. Haryana gives ₹2,500/month total)"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof (Birth Certificate / School Certificate / Voter ID)",
+      "BPL Ration Card",
+      "Bank Account Details",
+      "Passport-size Photograph"
+    ],
+    "applicationProcess": [
+      "Visit your local Gram Panchayat (rural) or Municipal Office (urban)",
+      "Fill the IGNOAPS application form",
+      "Submit age proof, BPL card, and Aadhaar",
+      "Application forwarded to District Social Welfare Officer",
+      "Pension disbursed monthly to bank account after approval"
+    ],
+    "apply_url": "https://nsap.nic.in",
+    "tags": ["pension", "senior citizen", "old age", "BPL", "elderly", "social assistance", "monthly income"]
+  }
+]
