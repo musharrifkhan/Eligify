@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainSiteLayout from "../layouts/MainSiteLayout";
-import AuthLayout from "../layouts/AuthLayout";
+import MainSiteLayout from "../pages/layout/MainSiteLayout";
+import AuthLayout from "../pages/layout/AuthLayout";
 
 
 import Home from "../pages/Home";
