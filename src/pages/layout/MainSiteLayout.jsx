@@ -1,16 +1,18 @@
-import Footer from "../../Components/Footer";
-import NavBar from "../../Components/NavBar";
-import { Outlet } from "react-router";
-// imported oulte jo bhi route ke andar children hai unko logically render krna 
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
-function MainSiteLayout() {
-    return (
-        <>
-            <NavBar/>
-            <Outlet/>
-            <Footer/>
-        </>
-    )
-}
+const MainSiteLayout = () => {
+  return (
+    <div className="app-root">
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default MainSiteLayout;

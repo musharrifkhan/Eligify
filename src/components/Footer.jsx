@@ -1,6 +1,11 @@
+import React from "react";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer">
+      <p>© {new Date().getFullYear()} Eligify • Built as a college project</p>
+    </footer>
+  );
+};
+
+export default Footer;
