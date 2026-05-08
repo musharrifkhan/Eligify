@@ -15,7 +15,7 @@ const Home = () => {
 
           <h1 className="hero-title">
             Find the right
-            <span className="gradient-text"> government schemes</span>
+            government schemes
             <br />
             for you instantly.
           </h1>
@@ -44,7 +44,6 @@ const Home = () => {
             <div className="hero-card-top">✨ AI Matched</div>
 
             <h3>PM Scholarship Scheme</h3>
-
             <p>92% Match based on your profile.</p>
 
             <div className="hero-progress">

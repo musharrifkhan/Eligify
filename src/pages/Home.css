@@ -1,5 +1,3 @@
-
-
 .home-page {
   width: 100%;
   overflow-x: hidden;
@@ -13,12 +11,11 @@
   justify-content: space-between;
   gap: 80px;
   padding: 80px 8%;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 228, 196, 0.45),
-      rgba(221, 214, 254, 0.45)
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 228, 196, 0.45),
+    rgba(221, 214, 254, 0.45)
+  );
 }
 
 .hero-content {
@@ -37,11 +34,9 @@
   border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
-  box-shadow:
-    0 8px 25px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   margin-bottom: 35px;
 }
-
 
 .hero-title {
   font-size: 78px;
@@ -52,14 +47,8 @@
   letter-spacing: -2px;
 }
 
-
 .gradient-text {
-  background:
-    linear-gradient(
-      90deg,
-      #5b4df5,
-      #d89a2b
-    );
+  background: linear-gradient(90deg, #5b4df5, #d89a2b);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,23 +71,14 @@
   flex-wrap: wrap;
 }
 
-
 .primary-btn {
   border: none;
   outline: none;
   cursor: pointer;
 
   padding: 18px 34px;
-
+  background-color: #0f172a;
   border-radius: 18px;
-
-  background:
-    linear-gradient(
-      90deg,
-      #4f46e5,
-      #e8a23d
-    );
-
   color: white;
   font-size: 17px;
   font-weight: 700;
@@ -106,15 +86,13 @@
   transition: 0.3s;
   text-decoration: none;
 
-  box-shadow:
-    0 10px 25px rgba(79,70,229,0.25);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.25);
 }
+
 
 .primary-btn:hover {
-  transform:
-    translateY(-3px);
+  transform: translateY(-3px);
 }
-
 
 .secondary-btn {
   padding: 18px 34px;
@@ -124,15 +102,13 @@
   text-decoration: none;
   font-weight: 700;
 
-  box-shadow:
-    0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 
   transition: 0.3s;
 }
 
 .secondary-btn:hover {
-  transform:
-    translateY(-3px);
+  transform: translateY(-3px);
 }
 .hero-image {
   flex: 1;
@@ -141,33 +117,19 @@
   align-items: center;
 }
 
-
 .hero-card {
   width: 420px;
-
   background: white;
-
   border-radius: 32px;
-
   padding: 38px;
-
-  box-shadow:
-    0 20px 60px rgba(0,0,0,0.08);
-
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
   position: relative;
 }
-
 
 .hero-card-top {
   display: inline-flex;
   align-items: center;
-
-  background:
-    linear-gradient(
-      90deg,
-      #ede9fe,
-      #ffedd5
-    );
+  background: linear-gradient(90deg, #ede9fe, #ffedd5);
 
   color: #4f46e5;
 
@@ -187,14 +149,12 @@
   color: #111827;
 }
 
-
 .hero-card p {
   color: #6b7280;
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 28px;
 }
-
 
 .hero-progress {
   width: 100%;
@@ -207,14 +167,7 @@
 .hero-progress-fill {
   width: 92%;
   height: 100%;
-
-  background:
-    linear-gradient(
-      90deg,
-      #5b4df5,
-      #e8a23d
-    );
-
+  background: linear-gradient(90deg, #5b4df5, #e8a23d);
   border-radius: 999px;
 }
 
@@ -222,22 +175,19 @@
   padding: 120px 8%;
   text-align: center;
 }
-
+section.features-section{
+  display:flex;
+  flex-direction: column;
+}
 .features-section h2 {
   font-size: 52px;
   margin-bottom: 70px;
   color: #111827;
 }
 
-
 .features-grid {
   display: grid;
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(280px,1fr)
-    );
-
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 35px;
 }
 
@@ -245,23 +195,18 @@
   background: white;
   padding: 42px 34px;
   border-radius: 28px;
-
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.05);
-
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
 
 .feature-card:hover {
-  transform:
-    translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .feature-icon {
   font-size: 40px;
   margin-bottom: 22px;
 }
-
 
 .feature-card h3 {
   font-size: 28px;
@@ -294,10 +239,7 @@
   margin-bottom: 36px;
 }
 
-@media (
-  max-width: 1100px
-) {
-
+@media (max-width: 1100px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -317,10 +259,7 @@
   }
 }
 
-@media (
-  max-width: 768px
-) {
-
+@media (max-width: 768px) {
   .hero-title {
     font-size: 48px;
   }
@@ -339,10 +278,7 @@
   }
 }
 
-@media (
-  max-width: 500px
-) {
-
+@media (max-width: 500px) {
   .hero-section {
     padding: 50px 6%;
   }
