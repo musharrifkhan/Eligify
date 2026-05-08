@@ -44,7 +44,7 @@ const Signup = () => {
 
     e.preventDefault();
 
-    // CHECK EXISTING USER
+
 
     const existingUser =
       JSON.parse(
@@ -65,7 +65,7 @@ const Signup = () => {
       return;
     }
 
-    // SAVE USER
+
 
     localStorage.setItem(
       "eligifyUser",
@@ -74,7 +74,6 @@ const Signup = () => {
       )
     );
 
-    // LOGIN USER
 
     login(formData);
 
@@ -123,8 +122,7 @@ const Signup = () => {
             }
           />
 
-          {/* EMAIL */}
-
+          
           <input
             type="email"
             placeholder="Email"
@@ -141,7 +139,6 @@ const Signup = () => {
             }
           />
 
-          {/* PASSWORD */}
 
           <div
             className="password-box"
@@ -185,7 +182,7 @@ const Signup = () => {
 
           </div>
 
-          {/* ERROR */}
+
 
           {error && (
 
@@ -193,8 +190,6 @@ const Signup = () => {
               {error}
             </p>
           )}
-
-          {/* BUTTON */}
 
           <button
             className="primary-btn"
