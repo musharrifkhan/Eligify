@@ -18,7 +18,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
 
-      {/* LOGO */}
 
       <Link
         to="/"
@@ -34,8 +33,6 @@ const Navbar = () => {
         </h2>
 
       </Link>
-
-      {/* NAV LINKS */}
 
       <div className="nav-links">
 
@@ -69,7 +66,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* RIGHT SIDE */}
+     
 
       <div className="nav-buttons">
 
