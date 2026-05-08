@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <div className="home-page">
 
-      {/* HERO SECTION */}
 
       <section className="hero-section">
 
@@ -95,7 +94,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FEATURES */}
+
 
       <section className="features-section">
 
