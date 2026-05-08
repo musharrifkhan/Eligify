@@ -17,48 +17,35 @@ const AppContext =
 export const AppProvider =
   ({ children }) => {
 
-    // USER
-
     const [
       currentUser,
       setCurrentUser,
     ] = useState(null);
 
-    // AUTH
 
     const [
       isAuthenticated,
       setIsAuthenticated,
     ] = useState(false);
 
-    // ANSWERS
-
     const [
       userAnswers,
       setUserAnswers,
     ] = useState({});
 
-    // RESULTS
 
     const [
       matchedSchemes,
       setMatchedSchemes,
     ] = useState([]);
 
-    // SAVED
-
     const [
       savedSchemes,
       setSavedSchemes,
     ] = useState([]);
 
-    // ======================
-    // LOAD FROM LOCAL STORAGE
-    // ======================
-
     useEffect(() => {
 
-      // USER
 
       const storedUser =
         localStorage.getItem(
@@ -81,7 +68,6 @@ export const AppProvider =
         );
       }
 
-      // ANSWERS
 
       const storedAnswers =
         localStorage.getItem(
@@ -99,7 +85,6 @@ export const AppProvider =
         );
       }
 
-      // SAVED
 
       const storedSaved =
         localStorage.getItem(
@@ -119,9 +104,6 @@ export const AppProvider =
 
     }, []);
 
-    // ======================
-    // LOGIN
-    // ======================
 
     const login =
       (userData) => {
@@ -142,9 +124,6 @@ export const AppProvider =
         );
       };
 
-    // ======================
-    // SIGNUP
-    // ======================
 
     const signup =
       (userData) => {
@@ -165,9 +144,6 @@ export const AppProvider =
         );
       };
 
-    // ======================
-    // LOGOUT
-    // ======================
 
     const logout =
       () => {
@@ -185,9 +161,6 @@ export const AppProvider =
         );
       };
 
-    // ======================
-    // RESULTS
-    // ======================
 
     const generateResults =
       () => {
@@ -202,10 +175,6 @@ export const AppProvider =
           results
         );
       };
-
-    // ======================
-    // SAVE SCHEME
-    // ======================
 
  const toggleSaveScheme = (scheme) => {
 
