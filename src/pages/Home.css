@@ -1,6 +1,4 @@
-/* =========================
-   HOME PAGE
-========================= */
+
 
 .home-page {
   width: 100%;
@@ -8,11 +6,6 @@
   background: #f8f8fc;
   color: #111827;
 }
-
-/* =========================
-   HERO SECTION
-========================= */
-
 .hero-section {
   min-height: 92vh;
   display: flex;
@@ -27,8 +20,6 @@
       rgba(221, 214, 254, 0.45)
     );
 }
-
-/* LEFT */
 
 .hero-content {
   flex: 1;
@@ -51,7 +42,6 @@
   margin-bottom: 35px;
 }
 
-/* TITLE */
 
 .hero-title {
   font-size: 78px;
@@ -62,7 +52,6 @@
   letter-spacing: -2px;
 }
 
-/* GRADIENT TEXT */
 
 .gradient-text {
   background:
@@ -78,9 +67,6 @@
   background-clip: text;
   color: transparent;
 }
-
-/* SUBTITLE */
-
 .hero-subtitle {
   font-size: 22px;
   line-height: 1.8;
@@ -89,8 +75,6 @@
   max-width: 640px;
 }
 
-/* BUTTONS */
-
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -98,7 +82,6 @@
   flex-wrap: wrap;
 }
 
-/* PRIMARY BTN */
 
 .primary-btn {
   border: none;
@@ -132,7 +115,6 @@
     translateY(-3px);
 }
 
-/* SECONDARY */
 
 .secondary-btn {
   padding: 18px 34px;
@@ -152,11 +134,6 @@
   transform:
     translateY(-3px);
 }
-
-/* =========================
-   RIGHT SIDE
-========================= */
-
 .hero-image {
   flex: 1;
   display: flex;
@@ -164,7 +141,6 @@
   align-items: center;
 }
 
-/* CARD */
 
 .hero-card {
   width: 420px;
@@ -181,7 +157,6 @@
   position: relative;
 }
 
-/* TOP */
 
 .hero-card-top {
   display: inline-flex;
@@ -206,15 +181,12 @@
   margin-bottom: 28px;
 }
 
-/* TITLE */
-
 .hero-card h3 {
   font-size: 34px;
   margin-bottom: 14px;
   color: #111827;
 }
 
-/* TEXT */
 
 .hero-card p {
   color: #6b7280;
@@ -223,7 +195,6 @@
   margin-bottom: 28px;
 }
 
-/* PROGRESS */
 
 .hero-progress {
   width: 100%;
@@ -232,8 +203,6 @@
   border-radius: 999px;
   overflow: hidden;
 }
-
-/* PROGRESS FILL */
 
 .hero-progress-fill {
   width: 92%;
@@ -249,10 +218,6 @@
   border-radius: 999px;
 }
 
-/* =========================
-   FEATURES
-========================= */
-
 .features-section {
   padding: 120px 8%;
   text-align: center;
@@ -264,7 +229,6 @@
   color: #111827;
 }
 
-/* GRID */
 
 .features-grid {
   display: grid;
@@ -276,8 +240,6 @@
 
   gap: 35px;
 }
-
-/* CARD */
 
 .feature-card {
   background: white;
@@ -295,14 +257,11 @@
     translateY(-8px);
 }
 
-/* ICON */
-
 .feature-icon {
   font-size: 40px;
   margin-bottom: 22px;
 }
 
-/* TITLE */
 
 .feature-card h3 {
   font-size: 28px;
@@ -317,10 +276,6 @@
   line-height: 1.7;
   font-size: 17px;
 }
-
-/* =========================
-   CTA
-========================= */
 
 .cta-section {
   padding: 120px 8%;
@@ -338,10 +293,6 @@
   color: #6b7280;
   margin-bottom: 36px;
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (
   max-width: 1100px
