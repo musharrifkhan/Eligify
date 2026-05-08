@@ -1,17 +1,30 @@
 import "./SavedSchemes.css";
 
-import { Link } from "react-router-dom";
+import {
+  Link,
+} from "react-router-dom";
 
-import { useAppContext } from "../context/AppContext";
+import {
+  useAppContext,
+} from "../context/AppContext";
 
 const SavedSchemes = () => {
-  const { savedSchemes, toggleSaveScheme } = useAppContext();
+
+  const {
+    savedSchemes,
+    toggleSaveScheme,
+  } = useAppContext();
 
   return (
     <div className="saved-page">
+
       <div className="saved-container">
+
         <div className="saved-header">
-          <span className="saved-badge">⭐ Saved schemes</span>
+
+          <span className="saved-badge">
+            ⭐ Saved schemes
+          </span>
 
           <h1>
             Your saved Schemes
@@ -20,57 +33,120 @@ const SavedSchemes = () => {
             </span> */}
           </h1>
 
-          <p>Access all bookmarked government schemes here.</p>
+          <p>
+            Access all bookmarked
+            government schemes here.
+          </p>
         </div>
 
         {savedSchemes.length === 0 ? (
+
           <div className="empty-saved">
-            <h2>No saved schemes yet</h2>
 
-            <p>Save schemes from the results page to view them here.</p>
+            <h2>
+              No saved schemes yet
+            </h2>
 
-            <Link to="/questionnaire" className="browse-btn">
+            <p>
+              Save schemes from the
+              results page to view them
+              here.
+            </p>
+
+            <Link
+              to="/questionnaire"
+              className="browse-btn"
+            >
               Browse Schemes
             </Link>
           </div>
+
         ) : (
+
           <div className="saved-grid">
-            {savedSchemes.map((scheme) => (
-              <div className="saved-card" key={scheme.id}>
-                <div className="saved-top">
-                  <span className="saved-category">{scheme.category}</span>
 
-                  <div className="saved-match">Saved</div>
-                </div>
+            {savedSchemes.map(
+              (scheme) => (
 
-                <h2>{scheme.title}</h2>
+                <div
+                  className="saved-card"
+                  key={scheme.id}
+                >
 
-                <p className="saved-description">{scheme.description}</p>
+                  <div className="saved-top">
 
-                <div className="saved-tags">
-                  {scheme.tags?.map((tag, index) => (
-                    <span key={index}>✓ {tag}</span>
-                  ))}
-                </div>
+                    <span className="saved-category">
+                      {
+                        scheme.category
+                      }
+                    </span>
 
-                <div className="saved-bottom">
-                  <p className="saved-benefit">{scheme.benefit}</p>
+                    <div className="saved-match">
+                      Saved
+                    </div>
+                  </div>
 
-                  <div className="saved-actions">
-                    <button
-                      className="remove-btn"
-                      onClick={() => toggleSaveScheme(scheme)}
-                    >
-                      Remove
-                    </button>
+                  <h2>
+                    {scheme.title}
+                  </h2>
 
-                    <Link to={`/scheme/${scheme.id}`} className="details-btn">
-                      View Details →
-                    </Link>
+                  <p className="saved-description">
+                    {
+                      scheme.description
+                    }
+                  </p>
+
+                  <div className="saved-tags">
+
+                    {scheme.tags?.map(
+                      (
+                        tag,
+                        index
+                      ) => (
+                        <span
+                          key={index}
+                        >
+                          ✓ {tag}
+                        </span>
+                      )
+                    )}
+
+                  </div>
+
+                  <div className="saved-bottom">
+
+                    <p className="saved-benefit">
+                      {
+                        scheme.benefit
+                      }
+                    </p>
+
+                    <div className="saved-actions">
+
+                      <button
+                        className="remove-btn"
+                        onClick={() =>
+                          toggleSaveScheme(
+                            scheme
+                          )
+                        }
+                      >
+                        Remove
+                      </button>
+
+                      <Link
+                        to={`/scheme/${scheme.id}`}
+                        className="details-btn"
+                      >
+                        View Details →
+                      </Link>
+
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
+
           </div>
         )}
       </div>

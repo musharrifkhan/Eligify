@@ -1,104 +1,251 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 import schemes from "../data/schemes.json";
 
-import { matchSchemes } from "../data/match";
+import {
+  matchSchemes,
+} from "../data/match";
 
-const AppContext = createContext();
+const AppContext =
+  createContext();
 
-export const AppProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
+export const AppProvider =
+  ({ children }) => {
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [userAnswers, setUserAnswers] = useState({});
-  const [matchedSchemes, setMatchedSchemes] = useState([]);
-  const [savedSchemes, setSavedSchemes] = useState([]);
+    const [
+      currentUser,
+      setCurrentUser,
+    ] = useState(null);
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem("eligifyUser");
-    if (storedUser) {
-      const parsedUser = JSON.parse(storedUser);
-      setCurrentUser(parsedUser);
-      setIsAuthenticated(true);
-    }
 
-    const storedAnswers = localStorage.getItem("eligifyAnswers");
+    const [
+      isAuthenticated,
+      setIsAuthenticated,
+    ] = useState(false);
 
-    if (storedAnswers) {
-      setUserAnswers(JSON.parse(storedAnswers));
-    }
+    const [
+      userAnswers,
+      setUserAnswers,
+    ] = useState({});
 
-    const storedSaved = localStorage.getItem("savedSchemes");
 
-    if (storedSaved) {
-      setSavedSchemes(JSON.parse(storedSaved));
-    }
-  }, []);
+    const [
+      matchedSchemes,
+      setMatchedSchemes,
+    ] = useState([]);
 
-  const login = (userData) => {
-    setCurrentUser(userData);
+    const [
+      savedSchemes,
+      setSavedSchemes,
+    ] = useState([]);
 
-    setIsAuthenticated(true);
+    useEffect(() => {
 
-    localStorage.setItem("eligifyUser", JSON.stringify(userData));
-  };
 
-  const signup = (userData) => {
-    setCurrentUser(userData);
+      const storedUser =
+        localStorage.getItem(
+          "eligifyUser"
+        );
 
-    setIsAuthenticated(true);
+      if (storedUser) {
 
-    localStorage.setItem("eligifyUser", JSON.stringify(userData));
-  };
+        const parsedUser =
+          JSON.parse(
+            storedUser
+          );
 
-  const logout = () => {
-    setCurrentUser(null);
-    setIsAuthenticated(false);
-    localStorage.removeItem("eligifyUser");
-  };
+        setCurrentUser(
+          parsedUser
+        );
 
-  const generateResults = () => {
-    const results = matchSchemes(schemes, userAnswers);
-    setMatchedSchemes(results);
-  };
+        setIsAuthenticated(
+          true
+        );
+      }
 
-  const toggleSaveScheme = (scheme) => {
-    const alreadySaved = savedSchemes.some((item) => item.id === scheme.id);
-    let updatedSchemes = [];
-    if (alreadySaved) {
-      updatedSchemes = savedSchemes.filter((item) => item.id !== scheme.id);
-    } else {
-      updatedSchemes = [...savedSchemes, scheme];
-    }
 
-    setSavedSchemes(updatedSchemes);
-    localStorage.setItem("savedSchemes", JSON.stringify(updatedSchemes));
-  };
-  return (
-    <AppContext.Provider
-      value={{
-        currentUser,
-        isAuthenticated,
+      const storedAnswers =
+        localStorage.getItem(
+          "eligifyAnswers"
+        );
 
-        login,
-        signup,
-        logout,
+      if (
+        storedAnswers
+      ) {
 
-        userAnswers,
-        setUserAnswers,
+        setUserAnswers(
+          JSON.parse(
+            storedAnswers
+          )
+        );
+      }
 
-        matchedSchemes,
-        generateResults,
 
-        savedSchemes,
-        toggleSaveScheme,
-      }}
-    >
-      {children}
-    </AppContext.Provider>
+      const storedSaved =
+        localStorage.getItem(
+          "savedSchemes"
+        );
+
+      if (
+        storedSaved
+      ) {
+
+        setSavedSchemes(
+          JSON.parse(
+            storedSaved
+          )
+        );
+      }
+
+    }, []);
+
+
+    const login =
+      (userData) => {
+
+        setCurrentUser(
+          userData
+        );
+
+        setIsAuthenticated(
+          true
+        );
+
+        localStorage.setItem(
+          "eligifyUser",
+          JSON.stringify(
+            userData
+          )
+        );
+      };
+
+
+    const signup =
+      (userData) => {
+
+        setCurrentUser(
+          userData
+        );
+
+        setIsAuthenticated(
+          true
+        );
+
+        localStorage.setItem(
+          "eligifyUser",
+          JSON.stringify(
+            userData
+          )
+        );
+      };
+
+
+    const logout =
+      () => {
+
+        setCurrentUser(
+          null
+        );
+
+        setIsAuthenticated(
+          false
+        );
+
+        localStorage.removeItem(
+          "eligifyUser"
+        );
+      };
+
+
+    const generateResults =
+      () => {
+
+        const results =
+          matchSchemes(
+            schemes,
+            userAnswers
+          );
+
+        setMatchedSchemes(
+          results
+        );
+      };
+
+ const toggleSaveScheme = (scheme) => {
+
+  const alreadySaved =
+    savedSchemes.some(
+      (item) =>
+        item.id === scheme.id
+    );
+
+  let updatedSchemes = [];
+
+  if (alreadySaved) {
+
+    updatedSchemes =
+      savedSchemes.filter(
+        (item) =>
+          item.id !== scheme.id
+      );
+
+  } else {
+
+    updatedSchemes = [
+      ...savedSchemes,
+      scheme,
+    ];
+  }
+
+  setSavedSchemes(
+    updatedSchemes
+  );
+
+  localStorage.setItem(
+    "savedSchemes",
+    JSON.stringify(
+      updatedSchemes
+    )
   );
 };
+    return (
 
-export const useAppContext = () => useContext(AppContext);
+      <AppContext.Provider
+        value={{
+
+          currentUser,
+          isAuthenticated,
+
+          login,
+          signup,
+          logout,
+
+          userAnswers,
+          setUserAnswers,
+
+          matchedSchemes,
+          generateResults,
+
+          savedSchemes,
+          toggleSaveScheme,
+        }}
+      >
+
+        {children}
+
+      </AppContext.Provider>
+    );
+  };
+
+export const useAppContext =
+  () =>
+    useContext(
+      AppContext
+    );
 
 export default AppContext;

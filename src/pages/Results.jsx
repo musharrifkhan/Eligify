@@ -1,10 +1,17 @@
 import "./Results.css";
 
-import { useMemo, useState } from "react";
+import {
+  useMemo,
+  useState,
+} from "react";
 
-import { useNavigate } from "react-router-dom";
+import {
+  useNavigate,
+} from "react-router-dom";
 
-import { useAppContext } from "../context/AppContext";
+import {
+  useAppContext,
+} from "../context/AppContext";
 
 const categories = [
   "All",
@@ -20,149 +27,301 @@ const categories = [
 ];
 
 const Results = () => {
-  const navigate = useNavigate();
 
-  const { matchedSchemes, savedSchemes, toggleSaveScheme } = useAppContext();
+  const navigate =
+    useNavigate();
 
-  const [search, setSearch] = useState("");
+  const {
+    matchedSchemes,
+    savedSchemes,
+    toggleSaveScheme,
+  } = useAppContext();
 
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [
+    search,
+    setSearch,
+  ] = useState("");
 
-  // filter
+  const [
+    activeCategory,
+    setActiveCategory,
+  ] = useState("All");
 
-  const filteredSchemes = useMemo(() => {
-    return matchedSchemes.filter((scheme) => {
-      const matchesSearch = scheme.title
-        .toLowerCase()
-        .includes(search.toLowerCase());
+  // FILTER SCHEMES
 
-      const matchesCategory =
-        activeCategory === "All" || scheme.category === activeCategory;
+  const filteredSchemes =
+    useMemo(() => {
 
-      return matchesSearch && matchesCategory;
-    });
-  }, [matchedSchemes, search, activeCategory]);
+      return matchedSchemes.filter(
+        (scheme) => {
+
+          const matchesSearch =
+            scheme.title
+              .toLowerCase()
+              .includes(
+                search.toLowerCase()
+              );
+
+          const matchesCategory =
+            activeCategory ===
+              "All" ||
+            scheme.category ===
+              activeCategory;
+
+          return (
+            matchesSearch &&
+            matchesCategory
+          );
+        }
+      );
+
+    }, [
+      matchedSchemes,
+      search,
+      activeCategory,
+    ]);
 
   return (
     <div className="results-page">
+
       {/* HERO */}
 
       <div className="results-hero">
+
         <div className="results-badge">
-          🌿 {filteredSchemes.length} schemes matched
+          🌿{" "}
+          {
+            filteredSchemes.length
+          }{" "}
+          schemes matched
         </div>
 
         <h1 className="results-title">
-          Your <span>personalised</span> matches
+
+          Your{" "}
+
+          <span>
+            personalised
+          </span>{" "}
+
+          matches
+
         </h1>
 
         <p className="results-subtitle">
-          Ranked by how well they fit your profile.
+          Ranked by how well
+          they fit your profile.
         </p>
 
         {/* SEARCH */}
 
         <div className="search-box">
+
           <input
             type="text"
             placeholder="Search schemes..."
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) =>
+              setSearch(
+                e.target.value
+              )
+            }
           />
+
         </div>
 
         {/* FILTERS */}
 
         <div className="category-row">
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={
-                activeCategory === category
-                  ? "category-btn active"
-                  : "category-btn"
-              }
-              onClick={() => setActiveCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
+
+          {categories.map(
+            (category) => (
+
+              <button
+                key={category}
+                className={
+                  activeCategory ===
+                  category
+                    ? "category-btn active"
+                    : "category-btn"
+                }
+                onClick={() =>
+                  setActiveCategory(
+                    category
+                  )
+                }
+              >
+                {category}
+              </button>
+            )
+          )}
+
         </div>
       </div>
 
       {/* RESULTS */}
 
       <div className="results-list">
-        {filteredSchemes.length > 0 ? (
-          filteredSchemes.map((scheme) => {
-            const isSaved = savedSchemes.some((item) => item.id === scheme.id);
 
-            return (
-              <div className="scheme-card" key={scheme.id}>
-                {/* TOP */}
+        {filteredSchemes.length >
+        0 ? (
 
-                <div className="scheme-top">
-                  <div className="scheme-left">
-                    <div className="scheme-category">{scheme.category}</div>
+          filteredSchemes.map(
+            (scheme) => {
 
-                    <h2>{scheme.title}</h2>
+              const isSaved =
+                savedSchemes.some(
+                  (item) =>
+                    item.id ===
+                    scheme.id
+                );
 
-                    <p className="scheme-description">{scheme.description}</p>
+              return (
+
+                <div
+                  className="scheme-card"
+                  key={scheme.id}
+                >
+
+                  {/* TOP */}
+
+                  <div className="scheme-top">
+
+                    <div className="scheme-left">
+
+                      <div className="scheme-category">
+                        {
+                          scheme.category
+                        }
+                      </div>
+
+                      <h2>
+                        {
+                          scheme.title
+                        }
+                      </h2>
+
+                      <p className="scheme-description">
+                        {
+                          scheme.description
+                        }
+                      </p>
+
+                    </div>
+
+                    {/* MATCH */}
+
+                    <div className="match-box">
+
+                      <span>
+                        {
+                          scheme.matchPercentage ||
+                          100
+                        }
+                        %
+                      </span>
+
+                      <p>
+                        match
+                      </p>
+
+                    </div>
+
                   </div>
 
-                  {/* MATCH */}
+                  {/* TAGS */}
 
-                  <div className="match-box">
-                    <span>{scheme.matchPercentage || 100}%</span>
+                  <div className="scheme-tags">
 
-                    <p>match</p>
+                    {scheme.tags?.map(
+                      (
+                        tag,
+                        index
+                      ) => (
+
+                        <span
+                          key={index}
+                        >
+                          ✓ {tag}
+                        </span>
+                      )
+                    )}
+
                   </div>
-                </div>
 
-                {/* TAGS */}
+                  {/* BOTTOM */}
 
-                <div className="scheme-tags">
-                  {scheme.tags?.map((tag, index) => (
-                    <span key={index}>✓ {tag}</span>
-                  ))}
-                </div>
+                  <div className="scheme-bottom">
 
-                {/* BOTTOM */}
+                    <p className="scheme-benefit">
+                      {
+                        scheme.benefit
+                      }
+                    </p>
 
-                <div className="scheme-bottom">
-                  <p className="scheme-benefit">{scheme.benefit}</p>
+                    <div className="scheme-actions">
 
-                  <div className="scheme-actions">
-                    {/* SAVE */}
+                      {/* SAVE */}
 
-                    <button
-                      className={isSaved ? "save-btn saved" : "save-btn "}
-                      onClick={() => toggleSaveScheme(scheme)}
-                    >
-                      {isSaved ? "Saved" : "Save"}
-                    </button>
+                      <button
+                        className={
+                          isSaved
+                            ? "save-btn saved"
+                            : "save-btn "
+                        }
+                        onClick={() =>
+                          toggleSaveScheme(
+                            scheme
+                          )
+                        }
+                      >
 
-                    {/* DETAILS */}
+                        {isSaved
+                          ? "Saved"
+                          : "Save"}
 
-                    <button
-                      className="details-btn"
-                      onClick={() => navigate(`/scheme/${scheme.id}`)}
-                    >
-                      View Details →
-                    </button>
+                      </button>
+
+                      {/* DETAILS */}
+
+                      <button
+                        className="details-btn"
+                        onClick={() =>
+                          navigate(
+                            `/scheme/${scheme.id}`
+                          )
+                        }
+                      >
+                        View Details →
+                      </button>
+
+                    </div>
+
                   </div>
+
                 </div>
-              </div>
-            );
-          })
+              );
+            }
+          )
+
         ) : (
-          <div className="empty-results">
-            <h2>No schemes found</h2>
 
-            <p>Try changing your search or filters.</p>
+          <div className="empty-results">
+
+            <h2>
+              No schemes found
+            </h2>
+
+            <p>
+              Try changing your
+              search or filters.
+            </p>
+
           </div>
         )}
+
       </div>
+
     </div>
   );
 };

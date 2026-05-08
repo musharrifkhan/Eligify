@@ -1,30 +1,64 @@
-import { useState } from "react";
+import {
+  useState,
+} from "react";
 
-import { useNavigate, Link } from "react-router-dom";
+import {
+  useNavigate,
+  Link,
+} from "react-router-dom";
 
-import { useAppContext } from "../context/AppContext";
+import {
+  useAppContext,
+} from "../context/AppContext";
 
 const Login = () => {
-  const navigate = useNavigate();
 
-  const { login } = useAppContext();
+  const navigate =
+    useNavigate();
 
-  const [showPassword, setShowPassword] = useState(false);
+  const { login } =
+    useAppContext();
 
-  const [formData, setFormData] = useState({
+  const [
+    showPassword,
+    setShowPassword,
+  ] = useState(false);
+
+  const [
+    formData,
+    setFormData,
+  ] = useState({
     email: "",
     password: "",
   });
 
-  const [error, setError] = useState("");
+  const [
+    error,
+    setError,
+  ] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (
+    e
+  ) => {
+
     e.preventDefault();
 
-    const savedUser = JSON.parse(localStorage.getItem("eligifyUser"));
+   
+
+    const savedUser =
+      JSON.parse(
+        localStorage.getItem(
+          "eligifyUser"
+        )
+      );
+
+
 
     if (!savedUser) {
-      setError("No account found. Please sign up first.");
+
+      setError(
+        "No account found. Please sign up first."
+      );
 
       return;
     }
@@ -32,50 +66,88 @@ const Login = () => {
     // VERIFY EMAIL + PASSWORD
 
     if (
-      savedUser.email === formData.email &&
-      savedUser.password === formData.password
+      savedUser.email ===
+        formData.email &&
+      savedUser.password ===
+        formData.password
     ) {
+
       login(savedUser);
 
-      navigate("/questionnaire");
+      navigate(
+        "/questionnaire"
+      );
+
     } else {
-      setError("Invalid email or password");
+
+      setError(
+        "Invalid email or password"
+      );
     }
   };
 
   return (
     <div className="page-container">
+
       <div className="auth-card">
-        <h1>Welcome Back</h1>
 
-        <p>Login to continue your eligibility journey.</p>
+        <h1>
+          Welcome Back
+        </h1>
 
-        <form onSubmit={handleSubmit} className="auth-form">
+        <p>
+          Login to continue
+          your eligibility
+          journey.
+        </p>
+
+        <form
+          onSubmit={
+            handleSubmit
+          }
+          className="auth-form"
+        >
+
+
+
           <input
             type="email"
             placeholder="Email"
             required
-            value={formData.email}
+            value={
+              formData.email
+            }
             onChange={(e) =>
               setFormData({
                 ...formData,
-                email: e.target.value,
+                email:
+                  e.target.value,
               })
             }
           />
 
           {/* PASSWORD */}
 
-          <div className="password-box">
+          <div
+            className="password-box"
+          >
+
             <input
-              type={showPassword ? "text" : "password"}
+              type={
+                showPassword
+                  ? "text"
+                  : "password"
+              }
               placeholder="Password"
               required
-              value={formData.password}
+              value={
+                formData.password
+              }
               onChange={(e) =>
                 setFormData({
                   ...formData,
-                  password: e.target.value,
+                  password:
+                    e.target.value,
                 })
               }
             />
@@ -83,21 +155,48 @@ const Login = () => {
             <button
               type="button"
               className="show-password-btn"
-              onClick={() => setShowPassword(!showPassword)}
+              onClick={() =>
+                setShowPassword(
+                  !showPassword
+                )
+              }
             >
-              {showPassword ? "Hide" : "Show"}
+
+              {showPassword
+                ? "Hide"
+                : "Show"}
+
             </button>
+
           </div>
 
-          {error && <p className="error-text">{error}</p>}
 
-          <button className="primary-btn" type="submit">
+          {error && (
+
+            <p className="error-text">
+              {error}
+            </p>
+          )}
+
+          
+
+          <button
+            className="primary-btn"
+            type="submit"
+          >
             Login
           </button>
+
         </form>
 
         <p className="auth-switch">
-          Haven't signed up yet? <Link to="/signup">Sign up</Link>
+
+          Haven't signed up yet?{" "}
+
+          <Link to="/signup">
+            Sign up
+          </Link>
+
         </p>
       </div>
     </div>

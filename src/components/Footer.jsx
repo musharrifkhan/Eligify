@@ -12,7 +12,9 @@ const Footer = () => {
           <h2>Eligify</h2>
         </div>
 
-        <p>Find what you're eligible for — without the paperwork headache.</p>
+        <p>
+          Find what you're eligible for — without the paperwork headache.
+        </p>
       </div>
 
       <div className="footer-links">
@@ -34,6 +36,7 @@ const Footer = () => {
 
         <div>
           <h3>Disclaimer</h3>
+
           <p>
             Eligify is a guidance platform. Always verify with official
             government portals before applying.
@@ -41,7 +44,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">© 2026 Eligify · A Capstone Project</div>
+      <div className="footer-bottom">
+        © 2026 Eligify · A Capstone Project
+      </div>
     </footer>
   );
 };
