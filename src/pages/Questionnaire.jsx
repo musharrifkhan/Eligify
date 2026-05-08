@@ -37,7 +37,7 @@ const Questionnaire = () => {
     setStep,
   ] = useState(0);
 
-  // LOAD SAVED ANSWERS
+
 
   useEffect(() => {
 
@@ -60,7 +60,6 @@ const Questionnaire = () => {
 
   }, []);
 
-  // SAVE ANSWERS
 
   useEffect(() => {
 
@@ -73,14 +72,14 @@ const Questionnaire = () => {
 
   }, [userAnswers]);
 
-  // PROGRESS
+
 
   const progress =
     ((step + 1) /
       sections.length) *
     100;
 
-  // UPDATE ANSWERS
+
 
   const updateAnswer = (
     key,
@@ -110,7 +109,6 @@ const Questionnaire = () => {
     );
   };
 
-  // VALIDATION
 
   const isStepValid =
     () => {
@@ -160,7 +158,6 @@ const Questionnaire = () => {
       }
     };
 
-  // NEXT STEP
 
   const nextStep = () => {
 
@@ -189,7 +186,7 @@ const Questionnaire = () => {
     }
   };
 
-  // PREV STEP
+
 
   const prevStep = () => {
 
@@ -201,7 +198,7 @@ const Questionnaire = () => {
     }
   };
 
-  // BUTTON STYLE
+  
 
   const getButtonClass =
     (key, value) => {
@@ -213,7 +210,7 @@ const Questionnaire = () => {
         : "option-btn";
     };
 
-  // OPTION RENDERER
+
 
   const renderOptions =
     (key, options) => {
@@ -252,7 +249,7 @@ const Questionnaire = () => {
 
       <div className="questionnaire-wrapper">
 
-        {/* TOP */}
+      
 
         <div className="progress-top">
 
@@ -273,7 +270,7 @@ const Questionnaire = () => {
 
         </div>
 
-        {/* BAR */}
+     
 
         <div className="progress-bar">
 
@@ -286,7 +283,7 @@ const Questionnaire = () => {
 
         </div>
 
-        {/* TABS */}
+
 
         <div className="step-tabs">
 
@@ -314,11 +311,9 @@ const Questionnaire = () => {
 
         </div>
 
-        {/* CARD */}
+
 
         <div className="questionnaire-card">
-
-          {/* STEP 1 */}
 
           {step === 0 && (
             <>
@@ -353,7 +348,7 @@ const Questionnaire = () => {
             </>
           )}
 
-          {/* STEP 2 */}
+
 
           {step === 1 && (
             <>
@@ -421,7 +416,6 @@ const Questionnaire = () => {
             </>
           )}
 
-          {/* STEP 3 */}
 
           {step === 2 && (
             <>
@@ -461,7 +455,7 @@ const Questionnaire = () => {
             </>
           )}
 
-          {/* STEP 4 */}
+        
 
           {step === 3 && (
             <>
@@ -501,7 +495,6 @@ const Questionnaire = () => {
             </>
           )}
 
-          {/* STEP 5 */}
 
           {step === 4 && (
             <>
@@ -531,7 +524,7 @@ const Questionnaire = () => {
             </>
           )}
 
-          {/* STEP 6 */}
+     
 
           {step === 5 && (
             <>
@@ -570,7 +563,7 @@ const Questionnaire = () => {
             </>
           )}
 
-          {/* STEP 7 */}
+         
 
           {step === 6 && (
             <>
