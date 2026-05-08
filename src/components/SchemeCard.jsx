@@ -5,14 +5,9 @@ const SchemeCard = ({ scheme, onSave }) => {
   return (
     <div className="scheme-card">
       <div className="scheme-top">
-        <span className="scheme-category">
-          {scheme.category}
-        </span>
+        <span className="scheme-category">{scheme.category}</span>
 
-        <button
-          className="save-btn"
-          onClick={() => onSave(scheme)}
-        >
+        <button className="save-btn" onClick={() => onSave(scheme)}>
           <Bookmark size={18} />
         </button>
       </div>
@@ -21,14 +16,9 @@ const SchemeCard = ({ scheme, onSave }) => {
 
       <p>{scheme.description}</p>
 
-      <div className="scheme-benefit">
-        {scheme.benefit}
-      </div>
+      <div className="scheme-benefit">{scheme.benefit}</div>
 
-      <Link
-        to={`/scheme/${scheme.id}`}
-        className="view-btn"
-      >
+      <Link to={`/scheme/${scheme.id}`} className="view-btn">
         View Details
         <ArrowRight size={18} />
       </Link>
