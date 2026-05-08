@@ -43,7 +43,7 @@ const Login = () => {
 
     e.preventDefault();
 
-    // GET STORED USER
+   
 
     const savedUser =
       JSON.parse(
@@ -52,7 +52,7 @@ const Login = () => {
         )
       );
 
-    // CHECK USER
+
 
     if (!savedUser) {
 
@@ -108,7 +108,7 @@ const Login = () => {
           className="auth-form"
         >
 
-          {/* EMAIL */}
+
 
           <input
             type="email"
@@ -170,7 +170,6 @@ const Login = () => {
 
           </div>
 
-          {/* ERROR */}
 
           {error && (
 
@@ -179,7 +178,7 @@ const Login = () => {
             </p>
           )}
 
-          {/* LOGIN BUTTON */}
+          
 
           <button
             className="primary-btn"
