@@ -277,8 +277,8 @@ const Results = () => {
                       >
 
                         {isSaved
-                          ? "Save"
-                          : "Saved"}
+                          ? "Saved"
+                          : "Save"}
 
                       </button>
 
