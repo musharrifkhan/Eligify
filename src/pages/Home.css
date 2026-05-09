@@ -77,7 +77,6 @@
   cursor: pointer;
 
   padding: 18px 34px;
-  background-color: #0f172a;
   border-radius: 18px;
   color: white;
   font-size: 17px;
@@ -167,7 +166,7 @@
 .hero-progress-fill {
   width: 92%;
   height: 100%;
-  background: linear-gradient(90deg, #5b4df5, #e8a23d);
+  background: linear-gradient(90deg, #4839ea, #6870a2);
   border-radius: 999px;
 }
 

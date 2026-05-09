@@ -48,7 +48,7 @@ const About = () => {
                 ? "/questionnaire"
                 : "/signup"
             }
-            className="about-btn"
+            className="primary-btn"
           >
             Try Eligify Now
           </Link>
