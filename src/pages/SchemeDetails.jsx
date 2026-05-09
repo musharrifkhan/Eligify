@@ -44,7 +44,7 @@ const SchemeDetails = () => {
   return (
     <div className="details-page">
 
-      <div className="details-wrapper">
+      <div className="details-wrapper" >
 
         <Link
           to="/results"
@@ -55,9 +55,9 @@ const SchemeDetails = () => {
 
         {/* HERO */}
 
-        <div className="details-hero">
+        <div className="details-hero" >
 
-          <div className="details-top">
+          <div className="details-top" >
 
             <span className="details-category">
               {scheme.category}

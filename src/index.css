@@ -119,8 +119,8 @@ select {
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   background-color: #5650c1;
+
 
   color: white;
 
@@ -365,9 +365,9 @@ select {
   line-height: 1.8;
 }
 
-/* =========================
-   PAGE LAYOUT
-========================= */
+
+   /* PAGE LAYOUT */
+
 
 .page-container {
   min-height: 85vh;
@@ -697,9 +697,9 @@ select {
   }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
+   /* RESPONSIVE */
+
 
 @media (max-width: 1100px) {
   .hero-section {
@@ -787,7 +787,7 @@ select {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4338ca, #f59e0b);
+  background: linear-gradient(90deg, #4338ca, #595cb4ff);
 }
 
 .step-tabs {

@@ -53,7 +53,7 @@ const Results = () => {
         </div>
 
         <h1 className="results-title">
-          Your <span>personalised</span> matches
+          Your personalised matches
         </h1>
 
         <p className="results-subtitle">

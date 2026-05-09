@@ -70,13 +70,7 @@
 
   box-sizing: border-box;
 
-  background:
-    linear-gradient(
-      135deg,
-      #2d379a,
-      #6748e2,
-      #ef9838
-    );
+  background-color: #5650c1;;
 
   color: white;
 
@@ -359,12 +353,7 @@
 
   border-radius: 50%;
 
-  background:
-    linear-gradient(
-      135deg,
-      #4d46db,
-      #d89547
-    );
+  background-color: #5650c1;;
 
   color: white;
 

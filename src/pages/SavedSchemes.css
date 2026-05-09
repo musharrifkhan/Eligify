@@ -367,12 +367,7 @@
 
   font-weight: 700;
 
-  background:
-    linear-gradient(
-      90deg,
-      #4f46dd,
-      #d89643
-    );
+  background-color: #5650c1;;
 
   color: white;
 }
