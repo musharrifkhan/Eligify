@@ -49,7 +49,8 @@ const Navbar = () => {
         >
           Check Eligibility
         </NavLink>
-<NavLink
+
+        <NavLink
           to={
             isAuthenticated
               ? "/saved"
@@ -58,7 +59,6 @@ const Navbar = () => {
         >
           Saved
         </NavLink>
-        
 
         <NavLink to="/about">
           About
