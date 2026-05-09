@@ -50,15 +50,7 @@ const Navbar = () => {
           Check Eligibility
         </NavLink>
 
-        <NavLink
-          to={
-            isAuthenticated
-              ? "/saved"
-              : "/login"
-          }
-        >
-          Saved
-        </NavLink>
+        
 
         <NavLink to="/about">
           About
