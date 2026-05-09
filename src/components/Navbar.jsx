@@ -1,29 +1,17 @@
-import {
-  NavLink,
-  Link,
-} from "react-router-dom";
-
-import {
-  useAppContext,
-} from "../context/AppContext";
-
+import {NavLink,Link,}from "react-router-dom";
+import {useAppContext,}from "../context/AppContext";
 const Navbar = () => {
-
   const {
     currentUser,
     isAuthenticated,
     logout,
   } = useAppContext();
-
   return (
     <nav className="navbar">
-
-
       <Link
         to="/"
         className="logo"
       >
-
         <div className="logo-icon">
           ✦
         </div>
@@ -110,12 +98,9 @@ const Navbar = () => {
               Get Started
             </Link>
           </>
-
         )}
-
       </div>
     </nav>
   );
 };
-
 export default Navbar;
